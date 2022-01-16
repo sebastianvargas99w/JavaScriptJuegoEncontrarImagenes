@@ -1,0 +1,60 @@
+[8:31 p. m., 29/9/2020] Anfitrio: C
+[8:31 p. m., 29/9/2020] Servidor: 124146
+[8:37 p. m., 29/9/2020] Servidor: {
+    "host":"host",
+    "guest":[Juan]
+}
+[8:38 p. m., 29/9/2020] Anfitrio:{
+    "chancesToReveal": 3,
+    "revealTimer": 4,
+    "numberOfImages": 9,
+    "owner": "Kevin",
+    "modo": 1
+}
+[8:40 p. m., 29/9/2020] Servidor: {
+    "player": {
+        "name":[Kevin,Juan],
+        "score":[0,0]
+    },
+    "Rug":[cuadrado, circulo, triangulo, derecha, pentagono, estrella, rombo, arriba, izquierda],
+    "delete":[],
+    "cards":[estrella]
+}
+[8:42 p. m., 29/9/2020] Anfitrio:E estrella
+[8:59 p. m., 29/9/2020] Servidor: {
+"player": {
+        "name":[Kevin,Juan],
+        "score":[1,0]
+    },
+    "Rug":[],
+    "delete":[estrella],
+    "cards":[]
+}
+[8:59 p. m., 29/9/2020] Servidor: F
+{
+"player": {
+        "name":[Kevin,Juan],
+        "score":[1,0]
+    },
+    "Rug":[cuadrado, circulo, triangulo, derecha, pentagono, estrella, rombo, arriba, izquierda],
+    "delete":[],
+    "cards":[circulo]
+}
+[9:04 p. m., 29/9/2020] Servidor: {
+    "chancesToReveal": 0,
+    "revealTimer": 4
+}
+[9:07 p. m., 29/9/2020] Servidor: {
+"player": {
+    "name":[Kevin,Juan],
+    "score":[1,0]
+},
+"Rug":[],
+"delete":[circulo],
+"cards":[]
+}
+[9:08 p. m., 29/9/2020] Servidor: {
+    "name":["Kevin","Juan"],
+    "score":[1,1]
+}
+[9:12 p. m., 29/9/2020] Anfitrio:S

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Orbitron;
+  src: url('http://themes.googleusercontent.com/font?kit=lVErvynhvxLufD6jW6vDo_esZW2xOQ-xsNqO47m55DA');
+}
+* {
+  font-family: var(--Buttom_family);
+}
+
+h2 {
+  font-family: var(--Buttom_family);
+  margin-top: 40px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Body_Color);
+}
+
+section {
+  margin-top: 40px;
+}
+
+section>input {
+  border-radius: 7px;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  outline-width: 0;
+}
+
+#enlace {
+	margin-left: 8px;
+}
+
+#codigo-invalido {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}

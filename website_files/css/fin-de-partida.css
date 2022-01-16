@@ -1,0 +1,168 @@
+:root {
+	--Body_Color: #d1f39e;
+	--header_Color: #ffc374;
+	--Header_family: Orbitron;
+	--Buttom_family:"Liberation Sans";
+	--label_Background: #e4f9c5;
+}
+* {
+	font-family: var(--Buttom_family);
+}
+
+article {
+	width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Body_Color);
+}
+
+#playersList {
+	height: 300px;
+	overflow-y: scroll;
+	border:solid;
+	min-width:12%;
+	width:12%;
+	background:white;
+	margin-left:7%;
+	padding-left: 10px;
+	border-radius: 7px;
+}
+
+#topPlayers {
+	width: 27%;
+	margin-left: 45%;
+}
+
+#topPlayerList, #topPlayerScoreList {
+	display: flex;
+}
+
+#topPlayerScoreList {
+	margin-top :0px;
+	margin-left: -60px;
+}
+
+#winners {
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+#first, #second, #third, #firstPlayerPoints, #secondPlayerPoints, #thirdPlayerPoints {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	text-align: center;
+	
+}
+
+.first, .second, .third {
+	font-weight: bold;
+	text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+
+.first {
+	color: #FFD700;
+}
+
+.second {
+	color: #C0C0C0;
+}
+
+.third {
+	color: #CB6D51;
+}
+
+#first, #second, #third {
+	position: relative;
+	font-size: 20px;
+}
+
+#first {
+	top: 20px;
+}
+
+#second {
+	top: 78px;
+}
+
+#third {
+	top: 111px;
+	right :8px;
+}
+
+i {
+	text-decoration: none;
+}
+
+p, i {
+		font-size: 15px;
+		font-style: normal;
+}
+
+.playerListText {
+	margin-left: 50px;
+}
+
+#firstPlayerPoints, #secondPlayerPoints, #thirdPlayerPoints {
+	margin-top: 0px;
+}
+
+#pointsText {
+	position: relative;
+	right: 45px;
+	bottom: 22px;
+	background: var(--label_Background);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 7px;
+}
+
+#results {
+	display: flex;
+}
+
+#title {
+	text-align: center;
+}
+
+#playAgain {
+	right: -52px;
+	bottom: 61px;
+	height: 100%;
+}
+
+#mainPageButton {
+	right: -52px;
+	font-family: var(--Buttom_family);
+	margin-bottom: 1px;
+	margin-right: 30px;
+	bottom: 61px;
+	height: 100%;
+}
+
+@media (max-width: 680px) {
+	#second, #third {
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 500px) {
+	#playAgain, #mainPageButton {
+		margin-left: 35%;
+	}
+	.button-flex {
+		display: flex;
+		flex-direction: column;
+	}
+	button {
+		max-width: 110px;
+	}
+	#results {
+		flex-direction: column;
+	}
+}

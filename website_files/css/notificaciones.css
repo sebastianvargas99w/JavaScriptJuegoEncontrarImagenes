@@ -1,0 +1,24 @@
+.small-notification {
+    min-height: 180px;
+    min-width: 200px;
+    background: #e4f9c5;
+
+    margin-left: 35%;
+    margin-top: 9%;
+    display: block;
+
+    overflow: auto;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    max-width: 450px;
+}
+
+.wait {
+    width: 170px;
+    height: 340px;
+}
+
+.clock {
+    margin-top: -5%;
+}

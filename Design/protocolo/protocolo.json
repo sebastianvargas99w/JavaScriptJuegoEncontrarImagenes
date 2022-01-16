@@ -1,0 +1,190 @@
+a
+// from: client host
+// to: server
+// when: Cuando se presiona el botón de crer partida.
+
+{
+  "nombreMensaje": "Crear",
+}
+
+// from: server
+// to: client host
+// when: cuando se crea la sesion
+//Respuesta del servidor al anfitrión con el código de la partida
+{
+  "nombreMensaje": "SesionCreada",
+  "codigo": 124146,
+  "codigoEmisor": 4762394,
+  "palyers": ["Juan", "Kevin"],
+}
+
+// from: host
+// to: server
+// when: Le quita el focus al espacio del nombre
+{
+  "nombreMensaje": 'nombreAnfitrion',
+  "codigo":window.sessionStorage.getItem('codigo'),
+  "nombreA":nombreOwner,
+}
+
+// from: client guest
+// to: server
+// when: Cuando se presiona el botón de unirse en la pantalla de unirse
+{
+  "nombreMensaje": "Unirse",
+  "codigo": 124146,
+  "nombreInvitado": "Juan",
+}
+
+// from: client guest
+// to: server
+// when: el cliente envía un codigo de una sesion pero el servidor no puede agregarlo
+{
+  "nombreMensaje": "ErrorAlUnirse",
+}
+
+// from: Server
+// to: cliente guest
+// when: introdujo un condigo invalido
+{
+  "nombreMensaje": 'ErrorCodigoInvalido',
+}
+// from: server
+// to: clients
+//when: cuando un visitante se une a la sesion
+{
+  "nombreMensaje": "AgregadoASesion",
+  "host": "Sebas",
+  "guest": [ "Juan", "Kevin" ],
+  "codigoEmisor": 4762394,
+  "jugadores": ["Juan", "Kevin"],
+}
+
+// from: client host
+// to: server
+// when: el host presiona el boton de empezar en la patanlla de crear partida
+{
+  "nombreMensaje": "Iniciar",
+  "chancesToReveal": 1,
+  "revealTimer": 4,
+  "numberOfImages": 80,
+  "owner": "",
+  "modo": 1,
+  "codigoEmisor": 4762394,
+  "codigo": 234255,
+  "jugadores": ["Juan", "Kevin"],
+}
+
+//from: clients
+//to: server
+//when: el cliente cambia de pagina y crea un nuevo socket o conexion
+{
+  "nombreMensaje": "ActualizarSocket",
+  "codigo": 12345,
+  "codigoEmisor": 2135612,
+  "estado": "listoPartida",
+}
+// from: server
+// to: clients
+// when: cuando inicia la ronda
+{
+  "nombreMensaje": "Ronda",
+  "player": {
+    "name": [],
+    "score": []
+  },
+  "Rug": [],
+  "delete": [],
+  "cards": [],
+  "jugadores": ["Juan", "Kevin"],
+}
+
+
+// from: jugador
+// to: server
+// when: Cuando un jugador encuentra una carta
+{
+  "nombreMensaje": "EncontrarCarta",
+  "id": 2,
+  "nombre": "tortuga",
+  "codigoEmisor": 2135612,
+  "estado": "listoPartida",
+}
+
+
+// from: server
+// to: jugadores
+// when: Cuando un jugador encuentra una carta
+{
+  "nombreMensaje": "Ronda",
+  "player": {
+    "name": [],
+    "score": []
+  },
+  "Rug": [],
+  "delete": [],
+  "cards": [],
+  "jugadores": ["Juan", "Kevin"],
+}
+
+// from: server
+// to: jugadores
+// when: cuando la partida termina 
+{
+  "nombreMensaje": "Terminar",
+  "name": [],
+  "score": [],
+  "host": "sebas",
+  "jugadores": ["Juan", "Kevin"],
+}
+
+// from: client host
+// to: server
+// when: el anfitrión vuelve a la página principal
+{
+  "nombreMensaje": "Salir",
+  "codigo": 2135612,
+}
+
+// from: server
+// to: jugadores
+// when: cuando el host se sale de la partida
+{
+  "nombreMensaje": "HostDesconectado",
+}
+
+// from: client guest
+// to: server
+// when: el anfitrión vuelve a la página principal
+{
+  "nombreMensaje": "Desconectar",
+  "codigo": 2135612,
+  "codigoEmisor": 2135612,
+}
+// from: server
+// to: jugadores
+// when: un jugador invitado se sale, sirve para actualizar 
+// la lista de jugadores en crear
+{
+  "nombreMensaje": "SalioSesion",
+  "jugadores": ["Juan", "Kevin"],
+}
+
+// from: server
+// to: jugadores
+// when: El server recibe un mensaje de listo de algun jugador
+{
+  "nombreMensaje": "Listo",
+  "jugadores": ["Juan", "Kevin"],
+}
+
+// from: cliente invitado
+// to: host
+// when: un jugador presiono que quiere volver a jugar en 
+// la pantalla de fin de partida 
+{
+  "nombreMensaje": "Listo",
+  "jugadores": ["Juan", "Kevin"],
+  "codigo": 2135612,
+  "codigoEmisor": 4,
+}

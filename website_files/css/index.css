@@ -1,0 +1,51 @@
+img:hover {
+	filter: blur(1px) saturate(100);
+	animation-name: vibracion;
+	animation-duration: 5s;
+}
+
+#encabezado #puntajes {
+	display: flex;
+	flex-flow: row wrap;
+	padding-top: 10px;
+	align-self: auto;
+	font-size:20px;
+	color: black;
+	justify-content: flex-start;
+}
+
+#primero {
+	background: #efb810;
+}
+
+#segundo {
+	background: #a99267;
+}
+
+#tercero {
+	background: #808080;
+}
+
+#encabezado #cartasBuscadas {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#zonaDeJuego {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	padding: 20px;
+	border-right: 50px;
+	max-height: 500px;
+	overflow-x: hidden;
+}
+
+#zonaDeJuego img{
+	margin: 10px;
+}
+
+#tortuga {
+	width: 100px;
+	margin-right: 25px;
+}

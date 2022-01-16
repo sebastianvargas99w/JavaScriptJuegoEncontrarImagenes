@@ -1,0 +1,53 @@
+#instructions-title-header, #about-title
+{
+	text-align: center;
+}
+
+#instructions-accept, #about-accept
+{	
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-top: 10px;
+}
+
+/*
+basado en
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
+*/
+
+/* Popup container - can be anything you want */
+.popup {
+	z-index: 1;
+	visibility: hidden;
+	position: absolute;
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+	background-color: #df9e49;
+	border-radius: 5px;
+	border: 5px;	
+	border: solid;
+	padding: 2%;
+	box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  
+  /* Toggle this class - hide and show the popup */
+  .show {
+	visibility: visible;
+	animation: fadeIn 1s;
+  }
+
+  /* Add animation (fade in the popup) */
+  @keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+  }
+
+
+
+

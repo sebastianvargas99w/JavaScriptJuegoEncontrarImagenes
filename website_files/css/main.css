@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Orbitron;
+  src: url('http://themes.googleusercontent.com/font?kit=lVErvynhvxLufD6jW6vDo_esZW2xOQ-xsNqO47m55DA');
+}
+
+:root {
+	--Header_family: Orbitron;
+	--Buttom_family: "Liberation Sans";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color:var(--Body_Color);
+}
+
+fieldset {
+  margin-top: 180px;
+  font-family:var(--Buttom_family);
+  border: none;
+}
+
+#create {
+  width: 141px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+fieldset>button {
+  font-family: var(--Buttom_family);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-self: auto;
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  outline-width: 0;
+}
+
+@media screen and (max-width: 650px) {
+  nav>ul   {
+    flex-direction: column;
+  }
+}

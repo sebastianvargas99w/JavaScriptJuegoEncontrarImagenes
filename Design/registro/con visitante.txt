@@ -1,0 +1,39 @@
+[8:33 p. m., 29/9/2020] Visitante: U 124146 Juan
+[8:37 p. m., 29/9/2020] Sevidor: {
+    "host":"host",
+    "guest":[Juan]
+}
+[8:40 p. m., 29/9/2020] Sevidor: {
+    "player": {
+        "name":[Kevin,Juan],
+        "score":[0,0]
+    },
+    "Rug":[cuadrado, circulo, triangulo, derecha, pentagono, estrella, rombo, arriba, izquierda],
+    "delete":[],
+    "cards":[estrella]
+}
+[8:42 p. m., 29/9/2020] Visitante: E estrella
+[8:59 p. m., 29/9/2020] Sevidor: {"player": {
+        "name":[Kevin,Juan],
+        "score":[1,0]
+    },
+    "Rug":[],
+    "delete":[estrella],
+    "cards":[]
+}
+[9:00 p. m., 29/9/2020] Sevidor: F
+{
+"player": {
+        "name":[Kevin,Juan],
+        "score":[1,0]
+    },
+    "Rug":[cuadrado, circulo, triangulo, derecha, pentagono, estrella, rombo, arriba, izquierda],
+    "delete":[],
+    "cards":[circulo]
+}
+[9:04 p. m., 29/9/2020] Visitante: E circulo
+[9:09 p. m., 29/9/2020] Sevidor: {
+    "name":["Kevin","Juan"],
+    "score":[1,1]
+}
+[9:09 p. m., 29/9/2020]Visitante: D

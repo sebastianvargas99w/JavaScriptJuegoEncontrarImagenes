@@ -1,0 +1,73 @@
+@font-face {
+  font-family: Orbitron;
+  src: url('http://themes.googleusercontent.com/font?kit=lVErvynhvxLufD6jW6vDo_esZW2xOQ-xsNqO47m55DA');
+}
+
+:root {
+	--Body_Color: #d1f39e;
+	--header_Color: #ffc374;
+	--Header_family: Orbitron;
+	--Buttom_family: "Liberation Sans";
+	--exit_button: #df9e49
+}
+
+body header nav button:focus {
+	background: var(--header_Color);
+}
+
+#exit {
+	position: relative;
+	left:32px;
+	background: var(--exit_button);
+	margin-left: auto;
+}
+
+@media (max-width: 375px) {
+	#exit, nav>button {
+    margin: 0px;
+    position: unset;
+	}
+}
+
+#headerTitle {
+  display: flex;
+  border-bottom: 3px double gray;
+  background-color: var(--header_Color);
+
+}
+
+#headerTitle h1
+{
+  margin-bottom: -6px;
+  font-family:var(--Header_family);
+
+}
+
+nav
+{
+  display: flex;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0 2em;
+  margin-left: -35px;
+
+}
+
+nav>button
+{
+  background-color: white;
+  font-family:var(Buttom_family);
+  text-decoration:none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-self:auto;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  font-size: 15px;
+  color:black;
+  text-decoration: none;
+  border-right: solid;
+  border-radius: 0px;
+}

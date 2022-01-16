@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="icon" href="images/iconos/logoLince.png" type="image/png"/>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="keywords" content="desarrollo web, curso, evaluación"/>
+		<title>Encuéntralo</title>
+		<link rel="stylesheet" href="css/nav.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<!--Hoja de estilos para popups de nav-->
+		<link rel="stylesheet" href="css/generic-button.css"/>
+		<link rel="stylesheet" href="css/nav-item.css"/>
+	</head>
+	<body>
+		<header>
+			<div id="headerTitle">
+				<img id="logo" src="images/iconos/logoLince.png" alt="logo" width="90" height="80"/>
+				<h1>Encuéntralo</h1>
+			</div>
+			<nav>
+				<button id="instructions">Instrucciones</button>
+				<button id="about">Acerca de</button>
+			</nav>
+
+			<!--popup de instructions-->
+			<div id="instructions-content" class="instructions-content popup">
+				<section id="instructions-intro">
+					<article id="instructions-title">
+						<h2 id="instructions-title-header">Instrucciones</h2>
+						<p>¿Te gusta buscar objetos ocultos? "Encuentralo" consiste en buscar los objetos que tienes en tus cartas. Debes ser más rápido que tus amigos y afinar tu visión
+						<br/>para encontrar todos los objetos rápido. Divertete con los siguientes modos de juego:</p>
+					</article>
+				</section>
+				<section id="modes">
+					<article id="traditional">
+						<h2>Tradicional</h2>
+						<p>A cada jugador se le asignan 3 dibujos de manera aleatoria en cada ronda y los busca en el área
+						<br/>de juego, la ronda termina cuando un jugador encuentra los 3 dibujos.</p>
+					</article>
+					<article id="shared">
+						<h2>Compartidas</h2>
+						<p>Se le asignan 3 figuras elegidas aleatoriamente a todos los jugadores y el primero en encontrar las 3
+						<br/>es el ganador de la ronda.</p>
+					</article>
+				</section>
+				<button type="submit" id="instructions-accept">Aceptar</button>
+			</div> <!--popup de instructions-->
+
+			<!--popup de about-->
+			<div id="about-content" class="about-content popup">
+				<section id="about-seccion">
+					<article id="about-intro">
+						<p>
+							Este es un juego creado para el curso de Diseño de aplicaciones Web con el profesor Jeisson Hidalgo
+							<br/>
+							durante el segundo semestre del año 2020. Este se usó para aprender sobre diseño web.
+						</p>
+					</article>
+					<article id="credits">
+						<h2>
+							Desarrolladores
+						</h2>
+						<ul>
+							<li>
+								Kevin Obando Molina B55121
+							</li>
+							<li>
+								Sebastián Vargas Soto B47431
+							</li>
+							<li>
+								Juan David Díaz Marchena B72584
+							</li>
+						</ul>
+						<h2>Créditos adicionales</h2>
+						<ul>
+							<li>
+							<p> Las imágenes las tomamos de las siguientes páginas: </p>
+							<p>https://thenounproject.com/</p>
+							<p>https://www.flaticon.com/</p>
+							</li>
+							<li>
+							<p>Los audios del juego los tomamos de la siguiente pagina: </p>
+							<p>https://www.zapsplat.com/</p>
+							</li>
+						</ul>						
+					</article>
+				</section>
+				<button type="submit" id="about-accept">Aceptar</button>
+			</div> <!--popup de about-->
+		</header>
+		
+		<main>
+			<fieldset>
+					<button type="button" id="create">Crear</button>
+					<button type="button" id="join">Unirse</button>	
+			</fieldset>
+		</main>
+		<script src="javascript/index.js"></script>
+		<script src="javascript/nav-bar.js"></script>
+	</body>
+</html>

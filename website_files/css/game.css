@@ -1,0 +1,238 @@
+@keyframes vibracion {
+	20% {
+		transform: translateX(-10px);
+	}
+
+	80% {
+		transform: translateX(10px);
+	}
+}
+
+@keyframes selec {
+	20% {
+		transform: translateY(-10px);
+	}
+
+	80% {
+		transform: translateY(0px);
+	}
+}
+
+.hideElement {
+	visibility: hidden;
+}
+
+
+.mal:hover {
+	animation-name: vibracion;
+	animation-duration: 1s;
+}
+
+.showingCard {
+	animation: none;
+	filter: blur(0px);
+}
+
+.gris {
+	filter: grayscale(100%);
+}
+
+.showingCard:hover {
+	animation: none;
+	filter: blur(0px);
+}
+
+img:hover {
+	filter: saturate(100);
+	animation-name: selec;
+	animation-duration: 1.5s;
+}
+
+@font-face {
+	font-family: Orbitron;
+	src: url('http://themes.googleusercontent.com/font?kit=lVErvynhvxLufD6jW6vDo_esZW2xOQ-xsNqO47m55DA');
+	width: 100%;
+}
+
+* {
+	font-family: var( --Buttom_family);
+}
+
+#host-disconnected {
+	z-index: 2;
+}
+
+#headerTitle {
+	display: flex;
+	border-bottom: 3px double gray;
+	background-color: var(--header_Color);
+	margin-left: -30px;
+	margin-top: -10px;
+}
+
+#headerTitle h1 {
+	margin-bottom: -6px;
+	font-family: var(--Header_family);
+}
+
+@media screen and (max-width: 650px) {
+	nav>ul {
+		flex-direction: column;
+	}
+}
+
+h2, h3 {
+	margin-left: 22px;
+}
+
+#encabezado {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: var(--Body_Color);
+	justify-content: space-between;
+	padding: 10px
+}
+
+#encabezado #puntajes {
+	display: flex;
+	flex-flow: row;
+	padding-top: 10px;
+	align-self: auto;
+	font-size: 20px;
+	color: black;
+	max-width: 90%;
+}
+
+#encabezado #puntajes #others {
+	display: flex;
+	flex-flow: row;
+	align-self: auto;
+	font-size: 20px;
+	color: black;
+	max-width: 65%;
+	min-width: 102px;
+	overflow: auto;
+}
+
+#titulos {
+	display: flex;
+	margin-bottom: -35px;
+}
+
+#titulos>h2 {
+	z-index: 1;
+	flex-direction: column;
+	margin-right: 10px;
+}
+
+#encabezado #puntajes p {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	border: solid;
+	border-color: black;
+	border-radius: 3px;
+	border-style: double;
+	text-align: center;
+}
+
+#others {
+	display: flex;
+	justify-content: row;
+}
+
+#puntajes p {
+	background: #beeb78;
+}
+
+#puntajes .primero {
+	background: #efb810;
+}
+
+#puntajes .segundo {
+	background: #a99267;
+}
+
+#puntajes .tercero {
+	background: #808080;
+}
+
+#encabezado {
+	background: solid;
+	background-color: var(--Body_Color);
+}
+
+#cartasBuscadas {
+	min-width:222px;
+}
+
+#encabezado #cartasBuscadas {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#cartasBuscadas div {
+	background-color: white;
+	border-radius: 5px;
+	border: solid;
+	padding: 9px;
+	padding-bottom: 50px;
+	align-self: auto;
+	font-size: 20px;
+	color: black;
+	size: 50px;
+	background-color: white;
+	background: solid;
+}
+
+main h2, h3, h4 {
+	color: black;
+}
+
+#zonaDeJuego {
+	display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: white;
+	height: 23em;
+	touch-action: pan-y;
+}
+
+
+
+#zonaDeJuego img {
+	margin: 10px;
+}
+
+html {
+	min-height: 100%;
+	touch-action: pan-y;
+}
+
+body {
+	overflow: hidden;
+	margin: 20px;
+	margin-left: 35px;
+	background-color: var(--Body_Color);
+}
+
+#firstNavItem {
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.icn {
+	width: 50px;
+	height: 50px;
+	margin-right: 40px;
+}
+
+@media (max-width: 420px) {
+	body {
+		margin: 0px;
+	}
+}
+

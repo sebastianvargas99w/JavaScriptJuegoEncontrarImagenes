@@ -1,0 +1,9 @@
+{
+    "player": {
+        "name":[],
+        "score":[]
+    },
+    "Rug":[],
+    "delete":[],
+    "cards":[]
+}

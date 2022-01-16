@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="keywords" content="desarrollo web, curso, evaluación"/>
+		<title>Encuéntralo</title>
+		<link rel="icon" href="../images/iconos/logoLince.png" type="image/png" />
+		<link rel="stylesheet" href="../css/crear.css"/>
+		<link rel="stylesheet" href="../css/nav.css"/>
+		<link rel="stylesheet" href="../css/generic-button.css"/>
+
+		<!--Hoja de estilos para popups de nav-->
+		<link rel="stylesheet" href="../css/nav-item.css"/>
+	</head>
+	<body>
+		<header>
+			<div id="headerTitle">
+				<img id="logo" src="../images/iconos/logoLince.png" alt="logo" width="90" height="80"/>
+				<h1>Encuéntralo</h1>
+			</div>
+			<nav>
+				<button id="instructions">Instrucciones</button>
+				<button id="about">Acerca de</button>
+				<button id="exit">Salir</button>
+			</nav>
+
+			<!--popup de instructions-->
+			<div id="instructions-content" class="instructions-content popup">
+				<section id="instructions-intro">
+					<article id="instructions-title">
+						<h2 id="instructions-title-header">Instrucciones</h2>
+						<p>¿Te gusta buscar objetos ocultos? "Encuentralo" consiste en buscar los objetos que tienes en tus cartas. Debes ser más rápido que tus amigos y afinar tu visión
+						<br/>para encontrar todos los objetos rápido. Divertete con los siguientes modos de juego:</p>
+					</article>
+				</section>
+				<section id="modes">
+					<article id="traditional">
+						<h2>Tradicional</h2>
+						<p>A cada jugador se le asignan 3 dibujos de manera aleatoria en cada ronda y los busca en el área
+						<br/>de juego, la ronda termina cuando un jugador encuentra los 3 dibujos.</p>
+					</article>
+					<article id="shared">
+						<h2>Compartidas</h2>
+						<p>Se le asignan 3 figuras elegidas aleatoriamente a todos los jugadores y el primero en encontrar las 3
+						<br/>es el ganador de la ronda.</p>
+					</article>
+				</section>
+				<section id="configuraciones">
+					<article>
+						<h2>¿Que más puedo configurar?</h2>
+						<p>Además del modo de juego en esta pantalla se puede configurar la cantidad de veces que puedo revelar la carta a buscar y la cantidad de segundos que 
+						<br/>se va mostrar en pantalla, si prefieres no tener que memorizar las cartas y quieres que esten disponibles siempre entonces se debe dejar las veces en 0 y el 
+						<br/>tiempo en 0, de esta forma las cartas se mostraran de forma indefinida al hacer click una vez en ellas, de otra forma tanto veces como tiempo deben ser 
+						<br/>mayor que 0.</p>
+					</article>
+					<article>
+						<h2>¿Te parece muy sencillo?</h2>
+						<p>Si el juego te parece muy sencillo puedes aumentar la cantidad de figuras en la manta hasta un máximo de 415, si eso no es suficiente puedes activar 
+						<br/>la opción de escala de grises que hace que todas las figuras en la manta pierdan color y estén en escala de grises.</p>
+					</article>
+				</section>
+				<button type="submit" id="instructions-accept">Aceptar</button>
+			</div> <!--popup de instructions-->
+
+			<!--popup de about-->
+			<div id="about-content" class="about-content popup">
+				<section id="about-seccion">
+					<article id="about-intro">
+						<p>
+							Este es un juego creado para el curso de Diseño de aplicaciones Web con el profesor Jeisson Hidalgo
+							<br/>
+							durante el segundo semestre del año 2020. Este se usó para aprender sobre diseño web.
+						</p>
+					</article>
+					<article id="credits">
+						<h2>
+							Desarrolladores
+						</h2>
+						<ul>
+							<li>
+								Kevin Obando Molina B55121
+							</li>
+							<li>
+								Sebastián Vargas Soto B47431
+							</li>
+							<li>
+								Juan David Díaz Marchena B72584
+							</li>
+						</ul>
+						<h2>Créditos adicionales</h2>
+						<ul>
+							<li>
+							<p> Las imágenes las tomamos de las siguientes páginas: </p>
+							<p>https://thenounproject.com/</p>
+							<p>https://www.flaticon.com/</p>
+							</li>
+							<li>
+							<p>Los audios del juego los tomamos de la siguiente pagina: </p>
+							<p>https://www.zapsplat.com/</p>
+							</li>
+						</ul>						
+					</article>
+				</section>
+				<button type="submit" id="about-accept">Aceptar</button>
+			</div> <!--popup de about-->
+		</header>
+
+		<main>
+			<h2 id="title">Crear Partida</h2>
+			<form id="formulario-empezar" method="post">
+			<div id="ventana">
+			<fieldset id="input">
+				<div class="detalles">
+					<label>Código</label>
+					<input type="text" id="link" readonly="readonly"/>
+					<button type="button" id="copiar">
+						<img src="../images/iconos/copiar.svg" alt="copy-icon"/>
+					</button>
+				</div>
+				<div class="detalles">
+					<label>Nombre del<br/>anfitrión</label>
+					<input type="text" id="owner" value="Anfitrión" required="required"/>
+				</div>
+				<div class="detalles">
+					<label >Modo<br/> de juego</label>
+					<div id="modosDeJuego">
+						<div>
+							<label id="traditional-label">Tradicional</label>
+							<input type="radio" id="traditional-mode" value="traditional" name="game-mode" checked="checked"/>
+							<button type="button" id="traditional-info" value="?">?</button>
+							<div id="traditional-info-popup" class="popup">
+								<p>Todos los jugadores tienen diferentes cartas</p>
+							</div>
+						</div>
+						<div>
+							<label>Compartida</label>
+							<input type="radio" id="shared-mode" value="shared" name="game-mode"/>
+							<button type="button" id="shared-info" value="?">?</button>
+							<div id="shared-info-popup" class="popup">
+								<p>Todos los jugadores tienen cartas iguales</p>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+				<div class="detalles">
+					<label>Veces que puedo<br/> revelar una carta</label>
+					<input type="number" id="amount-reveal" min="0" max="5" value="3" required="required"/>
+				</div>
+				<div class="detalles">
+					<label>Tiempo para<br/>ver cartas (segundos)</label>
+					<input type="number" id="reveal-timer" min="0" max="59" value="1" required="required"/>
+				</div>
+				<div class="detalles">
+					<label>Cantidad de objetos</label>
+					<input type="number" id="number-images" min="9" max="416" value="80" required="required"/>
+				</div>
+				<div class="detalles">
+					<label>Cantidad de rondas</label>
+					<input type="number" id="number-rounds" min="1" max="80" value="2" required="required"/>
+				</div>
+				<div class="detalles">
+					<label>Las figuras de las mantas están grises</label>
+					<input type="checkbox" id="gris" />
+				</div>
+				<!-- explicacion de los modos de juego -->
+			</fieldset>
+			<fieldset id="players">
+			<!-- ESPERANDO JUGADORES -->
+				<p>Esperando jugadores...</p>
+				<p id="cantidad" >Total: </p>
+					<section id="playersList">
+
+					</section>
+				<button type="submit" id="hidden-submit">No debería verse</button>
+				<button type="button" id="empezar">Empezar</button>
+			</fieldset>
+			</div>
+			</form>
+		</main>
+	<script async="async" src="../javascript/crear.js"></script>
+	<script src="../javascript/salir.js"></script>
+	<script src="../javascript/nav-bar.js"></script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   height="80"
+   width="80"
+   sodipodi:docname="cuadrado_verde.svg"
+   id="svg682"
+   version="1.1"
+   y="0px"
+   x="0px"
+   viewBox="0 0 80 80"
+   data-name="Layer 1">
+  <metadata
+     id="metadata688">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs686" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg682"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="33.912639"
+     inkscape:cx="40"
+     inkscape:zoom="4.304"
+     showgrid="false"
+     id="namedview684"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <title
+     id="title674">Rounded Square Fill</title>
+  <rect
+     id="rect676"
+     ry="5.5"
+     rx="5.5"
+     height="80"
+     width="80"
+     y="0"
+     x="0" />
+  <path
+     id="path690"
+     d="M 4.217827,79.700767 C 2.619394,79.210437 1.399587,78.190214 0.586469,76.663569 0.170135,75.881894 0.150952,74.481968 0.091595,40.548369 0.023745,1.757768 -0.0475331,3.819066 1.422964,2.044561 1.810563,1.57683 2.579043,0.975645 3.130696,0.708595 L 4.133701,0.223048 H 40 75.866299 l 1.003006,0.485547 c 0.551652,0.26705 1.32013,0.868235 1.70773,1.335966 1.470498,1.774505 1.399224,-0.286793 1.331371,38.503808 -0.05936,33.933599 -0.07854,35.333525 -0.494874,36.1152 -0.606209,1.138167 -1.499854,2.048322 -2.587324,2.635125 l -0.929368,0.501492 -35.548327,0.03961 C 20.796933,79.861586 4.538124,79.799016 4.217827,79.700765 Z"
+     style="fill:#00ff00;stroke-width:0.232342" />
+</svg>
